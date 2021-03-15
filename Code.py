@@ -1,10 +1,5 @@
-######################## JAWAHAR NAVODAYA VIDYALAYA DK, MUDIPU ##########################
-
-########################### PYTHON INVESTIGATORY PROJECT #############################
 
 ####################### FOOTBALL GAME AND SCORE MANAGEMENT SYSTEM ########################
-
-###################### MADE BY ROHAN RAGHAVAN, SUDEEP S AND RAHUL K ########################
 
 # Modules Used
 
