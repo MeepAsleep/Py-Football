@@ -1,14 +1,11 @@
 
-####################### FOOTBALL GAME AND SCORE MANAGEMENT SYSTEM ########################
-
-
-# Modules Used
+####################### FOOTBALL GAME ########################
 
 import pdb
 import random
 import csv
 
-# Global Variables used in various functions
+# Global Variables
 
 ch = 0
 a = 0
@@ -53,7 +50,7 @@ def User():
                 rw=csv.writer(file)
                 rw.writerow([na,0])
 
-# Update Score in Data File
+# Update Score
 
 def update():
     global na
@@ -80,7 +77,7 @@ def update():
         fw = csv.writer(file)
         fw.writerows(new)
 
-# Bubble Sorting inside the CSV file used
+# Bubble Sorting Scores
 
 def sort():
     global lines
@@ -104,7 +101,7 @@ def sort():
             fw.writerows(lines)
 
 
-# Main Function for Game excecution
+# Main Function
 
 def shoot():
     global goal
@@ -174,7 +171,7 @@ def shoot():
 
             
 
-# User Input Call
+# User Input Calls
 
 User()
 
@@ -207,8 +204,6 @@ while True:
         
         
         for i in range(5):
-
-            # Main game function call
             
             shoot()
 
@@ -218,7 +213,7 @@ while True:
 
             print('\n  ~~~YOU WIN!!!~~~')
 
-            # Updating Scores inside the CSV file after a win
+            # Score Updation
 
             update()
             
@@ -236,7 +231,7 @@ while True:
 
     elif k == 2:
 
-        # Sorting the list in the CSV file before displaying
+        # Sorting Scores
         
         sort()
 
@@ -261,7 +256,7 @@ while True:
 
     elif k == 4:
 
-        # Instructions as a multiple line string
+        # Instructions
         
         print('''\n\tWelcome to Kick Off!
 
@@ -278,7 +273,7 @@ Press Enter to continue...''')
 
     elif k == 5:
 
-        # Funtion for User Change 
+        # Change User 
 
         User()
     
@@ -286,7 +281,7 @@ Press Enter to continue...''')
 
         print('Thank you for playing this game.\nGoodbye, See you soon :)')
 
-        # Main loop break point
+        # Breakpoint
         
         break
 
